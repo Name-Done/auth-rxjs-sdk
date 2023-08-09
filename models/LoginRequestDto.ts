@@ -13,25 +13,25 @@
 
 /**
  * @export
- * @interface UnauthorizedResponseDto
+ * @interface LoginRequestDto
  */
-export interface UnauthorizedResponseDto {
+export interface LoginRequestDto {
     /**
-     * HTTP status code of the error
-     * @type {number}
-     * @memberof UnauthorizedResponseDto
-     */
-    statusCode: number;
-    /**
-     * Short description of the error
+     * The email of the user
      * @type {string}
-     * @memberof UnauthorizedResponseDto
+     * @memberof LoginRequestDto
      */
-    message: string;
+    email: string;
     /**
-     * Error type
+     * The password of the user (minimum 8 characters)
      * @type {string}
-     * @memberof UnauthorizedResponseDto
+     * @memberof LoginRequestDto
      */
-    error: string;
+    password: string;
+    /**
+     * The new password to set for the user (optional, minimum 8 characters)
+     * @type {string}
+     * @memberof LoginRequestDto
+     */
+    newPassword?: string;
 }

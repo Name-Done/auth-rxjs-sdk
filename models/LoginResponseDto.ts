@@ -13,25 +13,25 @@
 
 /**
  * @export
- * @interface BadRequestResponseDto
+ * @interface LoginResponseDto
  */
-export interface BadRequestResponseDto {
+export interface LoginResponseDto {
     /**
-     * HTTP status code of the error
-     * @type {number}
-     * @memberof BadRequestResponseDto
-     */
-    statusCode: number;
-    /**
-     * Short descriptions of the errors
-     * @type {Array<string>}
-     * @memberof BadRequestResponseDto
-     */
-    message: Array<string>;
-    /**
-     * Error type
+     * The ID token for the user
      * @type {string}
-     * @memberof BadRequestResponseDto
+     * @memberof LoginResponseDto
      */
-    error: string;
+    idToken: string;
+    /**
+     * The access token for the user
+     * @type {string}
+     * @memberof LoginResponseDto
+     */
+    accessToken: string;
+    /**
+     * The refresh token for the user
+     * @type {string}
+     * @memberof LoginResponseDto
+     */
+    refreshToken: string;
 }

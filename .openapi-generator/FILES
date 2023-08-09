@@ -1,11 +1,13 @@
 .gitignore
 README.md
-apis/AuthApi.ts
+apis/DefaultApi.ts
 apis/index.ts
 index.ts
 models/BadRequestResponseDto.ts
-models/LoginUserRequestDto.ts
-models/LoginUserResponseDto.ts
+models/LoginRequestDto.ts
+models/LoginResponseDto.ts
+models/RefreshTokenRequestDto.ts
+models/RefreshTokenResponseDto.ts
 models/UnauthorizedResponseDto.ts
 models/index.ts
 package.json
