@@ -1,7 +1,7 @@
 .gitignore
 .openapi-generator-ignore
 README.md
-apis/DefaultApi.ts
+apis/AuthApi.ts
 apis/index.ts
 index.ts
 models/BadRequestResponseDto.ts
