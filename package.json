@@ -5,7 +5,7 @@
   "author": "OpenAPI-Generator",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Stable-Org/auth-rxjs-sdk.git"
+    "url": "https://github.com/Name-Done/auth-rxjs-sdk.git"
   },
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
