@@ -17,6 +17,7 @@ import { BaseAPI, throwIfNullOrUndefined } from '../runtime';
 import type { OperationOpts, HttpHeaders } from '../runtime';
 import type {
     BadRequestResponseDto,
+    EmailConfirmationRequiredResponseDto,
     LoginRequestDto,
     LoginResponseDto,
     RefreshTokenRequestDto,
