@@ -13,25 +13,25 @@
 
 /**
  * @export
- * @interface LoginResponseDto
+ * @interface ConfirmForgotPasswordRequestDto
  */
-export interface LoginResponseDto {
+export interface ConfirmForgotPasswordRequestDto {
     /**
-     * The ID token for the user
+     * The email of the user
      * @type {string}
-     * @memberof LoginResponseDto
+     * @memberof ConfirmForgotPasswordRequestDto
      */
-    idToken: string;
+    email: string;
     /**
-     * The access token for the user
+     * The verification code sent to the email
      * @type {string}
-     * @memberof LoginResponseDto
+     * @memberof ConfirmForgotPasswordRequestDto
      */
-    accessToken: string;
+    verificationCode: string;
     /**
-     * The refresh token for the user
+     * The password of the user
      * @type {string}
-     * @memberof LoginResponseDto
+     * @memberof ConfirmForgotPasswordRequestDto
      */
-    refreshToken: string;
+    newPassword: string;
 }

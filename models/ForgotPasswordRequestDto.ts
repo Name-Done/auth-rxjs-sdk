@@ -13,19 +13,13 @@
 
 /**
  * @export
- * @interface RefreshTokenResponseDto
+ * @interface ForgotPasswordRequestDto
  */
-export interface RefreshTokenResponseDto {
+export interface ForgotPasswordRequestDto {
     /**
-     * The ID token for the user
+     * The email of the user
      * @type {string}
-     * @memberof RefreshTokenResponseDto
+     * @memberof ForgotPasswordRequestDto
      */
-    idToken: string;
-    /**
-     * The access token for the user
-     * @type {string}
-     * @memberof RefreshTokenResponseDto
-     */
-    accessToken: string;
+    email: string;
 }
